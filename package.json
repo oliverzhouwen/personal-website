@@ -1,5 +1,4 @@
 {
-  "homepage": "https://oliverzhouwen.github.io/personal-website",
   "name": "personal-website",
   "version": "0.1.0",
   "private": true,
@@ -27,7 +26,6 @@
 
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "deploy": "gh-pages -d build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
