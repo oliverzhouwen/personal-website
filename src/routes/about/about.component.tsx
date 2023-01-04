@@ -1,6 +1,8 @@
+import Construction from "../../components/Construction/construction.component";
+
 const About = () => {
     return (
-        <h1>Under Construction</h1>
+        <Construction />
     );
 };
 

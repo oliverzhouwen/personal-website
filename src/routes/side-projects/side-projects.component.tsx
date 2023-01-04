@@ -1,6 +1,8 @@
+import Construction from "../../components/Construction/construction.component";
+
 const SideProjects = () =>  {
     return (
-        <h1>Under Construction</h1>
+        <Construction />
     );
 };
 
