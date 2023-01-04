@@ -1,6 +1,6 @@
 const SideProjects = () =>  {
     return (
-        <h1>Side Projects</h1>
+        <h1>Under Construction</h1>
     );
 };
 

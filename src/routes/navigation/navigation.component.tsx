@@ -10,13 +10,6 @@ import {
  import NavigationContact from "../../components/NavigationContact/navigation-contact.component";
 
 const Navigation = () => {
-
-    let activeStyle = {
-        textDecoration: "underline",
-      };
-    
-      let activeClassName = "underline";
-
     return (
         <>
             <NavigationContainer>

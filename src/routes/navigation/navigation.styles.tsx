@@ -3,25 +3,40 @@ import { NavLink } from 'react-router-dom';
 
 export const NavigationContainer = styled.div`
     display: flex;
-    padding: 0.5rem;
-    align-items: center;
-    > * {
-        flex: 1;
+    @media (min-width: 851px) {
+        padding: 2rem;
+        align-items: center;
+        > * {
+            flex: 1;
+        }
     }
+    @media (max-width: 850px) {
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+    margin-bottom: 2rem;
 `;
 
 export const NavigationHeader = styled.h2`
-    font-family: 'Montserrat', sans-serif;
-`
+    font-family: 'Caveat', cursive;
+    font-size: 2rem;
+`;
 
 export const NavigationLinks = styled.div`
-    display: flex;
-    justify-content: space-around;
     padding: 0;
     margin: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
     > * {
+        font-weight: 500;
         font-size: 1.1rem;
     }
+    @media (max-width: 850px) {
+        width: 100%
+    }
+    
 `;
 
 export const NavigationLink = styled(NavLink)`
@@ -34,8 +49,11 @@ export const NavigationLink = styled(NavLink)`
 `
 
 export const NavigationContacts = styled.div`
-    display: flex;
-    justify-content: flex-end;
+
+    @media (min-width: 850px) {
+        display: flex;
+        justify-content: flex-end;
+    }
     padding: 0;
     margin: 0;
     > * {

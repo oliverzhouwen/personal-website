@@ -1,11 +1,14 @@
-import { Outlet } from "react-router-dom";
 import Pictures from "../../components/pictures/pictures.component";
+import HomeBanner from "../../components/HomeBanner/home-banner.component";
+import { HomeContainer } from "./home.styles";
+
 
 const Home = () => {
     return (
-        <>
+        <HomeContainer>
+            <HomeBanner />
             <Pictures />
-        </>
+        </HomeContainer>
     );
 };
 
