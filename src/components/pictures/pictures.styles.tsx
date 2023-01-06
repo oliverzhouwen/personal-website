@@ -7,3 +7,11 @@ export const PictureCardsContainer = styled.div`
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(3, 1fr);
 `;
+
+export const PictureCard = styled.img`
+    box-sizing: border-box;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+`;

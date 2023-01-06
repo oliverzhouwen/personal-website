@@ -2,6 +2,9 @@ import styled from 'styled-components';
 import { NavLink } from 'react-router-dom';
 
 export const NavigationContainer = styled.div`
+    position: sticky;
+    top: 0;
+    background: white;
     display: flex;
     @media (min-width: 851px) {
         padding: 2rem;
@@ -11,6 +14,7 @@ export const NavigationContainer = styled.div`
         }
     }
     @media (max-width: 850px) {
+        width: 100vw;
         flex-direction: column;
         align-items: center;
         gap: 1rem;

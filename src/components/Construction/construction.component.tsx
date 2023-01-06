@@ -1,4 +1,4 @@
-import { ConstructionContainer } from "./construction.container.styles"
+import { ConstructionContainer } from "./construction.styles"
 
 const Construction = () => {
     return (

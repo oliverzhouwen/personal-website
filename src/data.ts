@@ -1,4 +1,36 @@
-let pictures = [
+export const employment_history = [
+    {
+        position: "Quality Automation Engineer | Nasdaq",
+        companyLogo: "https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/NASDAQ_Logo.svg/1200px-NASDAQ_Logo.svg.png",
+        location: "Sydney, Australia",
+        duration: "Jul 2021 - Feb 2022",
+        description: 
+        `<p>During my time at Nasdaq, I worked at the core team of Nasdaq's SMARTS Trade Surveillance system which is an anti-Financial crime software that detects any fraudulent activities in the stock market.<p>
+        <ul>
+            <li>I Worked with the squad to define test strategy, create test plans and cases and ensure quality standards are
+            maintained.</li>
+            <li>I maintained quality automation frameworks</li>
+        </ul>
+        `
+    },
+    {
+        position: "Test Analyst | Optus",
+        companyLogo: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/Optus_logo.svg/2560px-Optus_logo.svg.png",
+        location: "Sydney, Australia",
+        duration: "Nov 2019 - Jul 2021",
+        description:
+        `<p>During my time at Optus, I worked at the Optus My Account team, we built the front-end web self-service portal for Optus customers to check their usage and pay their bills. Some of my tasks include:<p>
+        <ul>
+            <li>Built the automation framework using Cypress, I also maintained the existing Ruby Watir suite.</li>
+            <li>Coordinated with the squad for the bi-weekly release, prepared tests cases and ensured that the product were compatible with tests.</li>
+            <li>Reported found issues, tracked them on JIRA and collaborated with the squad to get issues resolved on time.</li>
+            <li>Performed User Acceptance Testing, Pre and Post Implementatiookn Testing for the product releases.</li>
+        </ul>
+        `
+    }
+];
+
+export const pictures = [
     {
         "name": "Sydney Harbour Bridge",
         "url": "https://live.staticflickr.com/65535/52601309537_399ee4de71_o.jpg",
@@ -54,5 +86,3 @@ let pictures = [
         "location": "Kyoto, Japan 🇯🇵"
     }
 ];
-
-export default pictures;

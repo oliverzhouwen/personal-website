@@ -1,6 +1,10 @@
-import { ModalContentContainer } from "./modal-content.styles";
-import { ModelContentImage } from "./mode-content-image.styles";
-import { ModalContentInfo } from "./modal-content-info.styles";
+import './modal-content.css';
+
+import { 
+    ModalContentContainer,
+    ModalContentInfo, 
+    ModelContentImage 
+} from "./modal-content.styles";
 
 type propTypes = {
     content: {
@@ -9,9 +13,7 @@ type propTypes = {
         "description": string,
         "location": string
     }
-}
-
-
+};
 
 const ModalContent = ({content}: propTypes) => {
     return (
