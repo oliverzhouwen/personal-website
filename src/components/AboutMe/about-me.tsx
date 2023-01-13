@@ -1,5 +1,5 @@
 import { AboutMeContainer } from "./about-me.styles";
-import SelfImage from "../../assets/img_avatar.png"
+import SelfImage from "../../assets/Personal_Avatar.jpg"
 
 const AboutMe = () => {
     return (
