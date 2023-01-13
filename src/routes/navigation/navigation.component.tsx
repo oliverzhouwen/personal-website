@@ -18,7 +18,7 @@ const Navigation = () => {
                 <NavigationLinks>
                     <NavigationLink to='/' >Home</NavigationLink>
                     <NavigationLink to='/about'>About</NavigationLink>
-                    <NavigationLink to='/sideprojects'>Side Projects</NavigationLink>
+                    <NavigationLink to='/sideprojects'>Projects</NavigationLink>
                 </NavigationLinks>
                 <NavigationContacts>
                     <IconContext.Provider value={{ size: '1.2rem' }}>

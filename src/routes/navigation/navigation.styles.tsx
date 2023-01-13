@@ -31,12 +31,13 @@ export const NavigationLinks = styled.div`
     padding: 0;
     margin: 0;
     display: flex;
+    /* justify-content: space-around; */
     flex-direction: row;
     > * {
         font-weight: 500;
         font-size: 1.1rem;
-        flex: 1;
         text-align: center;
+        flex: 1;
     }
     @media (max-width: 850px) {
         width: 100%
