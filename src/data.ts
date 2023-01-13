@@ -9,7 +9,8 @@ export const employment_history = [
         <ul>
             <li>I Worked with the squad to define test strategy, create test plans and cases and ensure quality standards are
             maintained.</li>
-            <li>I maintained quality automation frameworks</li>
+            <li>I created and maintained quality automation frameworks and tooling in consultation with senior team members.</li>
+            <li>I maintained automation test suites using Java Selenium.</li>
         </ul>
         `
     },

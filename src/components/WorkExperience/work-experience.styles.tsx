@@ -51,8 +51,6 @@ export const LeftContainer = styled.div`
             display: flex;
             flex-direction: column;
             align-items: flex-end;
-            position: sticky;
-            top: 28vh;
         }
 
         > h2 {
@@ -65,6 +63,22 @@ export const LeftContainer = styled.div`
             padding: 0;
         }
     };
+
+    .education-container {
+        img {
+            width: 120px;
+            filter: invert(1);
+        }
+        @media(min-width: 851px) {
+            text-align: right;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+        }
+        > h2 {
+            color: white
+        }
+    }
 `;
 
 export const RightContainer = styled.div`
