@@ -112,13 +112,10 @@ export const JobCardContainer = styled.div`
     .time-and-location {
         margin: 0;
         flex: 2;
+        text-align: end;
 
         @media(max-width: 850px) {
             flex: 1.5;
-        }
-
-        @media(min-width: 851px) {
-            text-align: end;
         }
 
         > p {

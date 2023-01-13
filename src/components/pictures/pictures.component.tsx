@@ -2,9 +2,10 @@ import { pictures } from '../../data';
 // import { PictureCard } from './picture.styles';
 import { PictureCardsContainer, PictureCard } from './pictures.styles';
 import ModalContent from '../ModalContent/modal-content';
+import Loader from '../Loader/loader';
 
 import ReactModal from 'react-modal';
-import { useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 
 const Pictures = () => {
 
@@ -49,29 +50,51 @@ const Pictures = () => {
 
     const [showModal, setShowModal] = useState(false);
     const [selectedPicrure, setSelectedPicture] = useState(pictures[0]);
+    const [loaded, setLoaded] = useState(0);
 
     const renderPicturesHandler = (pics: pictureObject[]) => {
         return pics.map(picture => {
-            return <PictureCard src={picture["url"]} onClick={() => {setShowModal(true); setSelectedPicture(picture)}}/>
+            return <PictureCard 
+                        key={picture.name}
+                        src={picture.url}
+                        loading="lazy"
+                        onClick={() => {setShowModal(true); setSelectedPicture(picture)}}
+                        onLoad={() => {setLoaded(prevState => prevState + 1)}}
+                    />
         })
+    }
+
+    if (loaded === pictures.length) {
+        document.body.style.overflow = 'visible';
+        let loaderElement = document.querySelector<HTMLElement>(".loader");
+        if(loaderElement != null) {
+            loaderElement.style.opacity = '0';
+            loaderElement.style.visibility = 'hidden';
+            // document.querySelector(".picture-component")?.removeChild(document.querySelector(".loader")!);
+        }
+    } else {
+        document.body.style.overflow = 'hidden';
     }
     
     return (
-        <>
-        <PictureCardsContainer>
-            {renderPicturesHandler(pictures)}
-        </PictureCardsContainer>
-        <ReactModal 
-            isOpen={showModal}
-            contentLabel="onRequestClose Example"
-            onRequestClose={() => setShowModal(false)}
-            shouldCloseOnOverlayClick={true}
-            ariaHideApp={false}
-            style={modalStyle}
-        >
-            <ModalContent content={selectedPicrure}/>
-        </ReactModal>
-        </>
+        <div className="picture-component">
+            <Loader />
+            <PictureCardsContainer>
+                {
+                    renderPicturesHandler(pictures)
+                }
+            </PictureCardsContainer>
+            <ReactModal 
+                isOpen={showModal}
+                contentLabel="onRequestClose Example"
+                onRequestClose={() => setShowModal(false)}
+                shouldCloseOnOverlayClick={true}
+                ariaHideApp={false}
+                style={modalStyle}
+            >
+                <ModalContent content={selectedPicrure}/>
+            </ReactModal>
+        </div>
     );
 };
 

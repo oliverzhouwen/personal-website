@@ -6,11 +6,15 @@ export const AboutMeContainer = styled.div`
     align-items: center;
     .self-image {
         border-radius: 50%;
-        width: 12rem;
-        height: 12rem;
+        width: 16rem;
+        height: 16rem;
         display: block;
     }
 
+    .self-introduction {
+        font-family: Roboto Slab, serif;
+    }
+    
     @media(min-width: 850px) {
         .self-image-container {
             width: 35%;
@@ -21,7 +25,7 @@ export const AboutMeContainer = styled.div`
         .self-introduction {
            width: 65%;
            > p {
-            font-size: 1.2rem;
+            font-size: 1rem;
            }
         }
     }

@@ -12,7 +12,7 @@ const renderEmploymentHistory = () => {
         employment_history.map(employment => {
             const { position, companyLogo, location, duration, description } = employment;
             return (
-                <JobCard position={position} companyLogo={companyLogo} location={location} duration={duration} description={description}/>
+                <JobCard key={position} position={position} companyLogo={companyLogo} location={location} duration={duration} description={description}/>
             )
         })
     )

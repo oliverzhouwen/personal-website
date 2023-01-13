@@ -1,4 +1,6 @@
-import { NavLink, Outlet } from "react-router-dom";
+import { Outlet } from "react-router-dom";
+import { BsInstagram, BsLinkedin, BsGithub } from 'react-icons/bs'
+import { IconContext } from "react-icons";
 
 import { 
     NavigationContainer,
@@ -7,7 +9,6 @@ import {
     NavigationLink,
     NavigationContacts
  } from "./navigation.styles";
- import NavigationContact from "../../components/NavigationContact/navigation-contact.component";
 
 const Navigation = () => {
     return (
@@ -20,9 +21,11 @@ const Navigation = () => {
                     <NavigationLink to='/sideprojects'>Side Projects</NavigationLink>
                 </NavigationLinks>
                 <NavigationContacts>
-                    <NavigationContact type="Instagram"/>
-                    <NavigationContact type="Linkedin"/>
-                    <NavigationContact type="Email"/>
+                    <IconContext.Provider value={{ size: '1.2rem' }}>
+                        <a href="https://www.instagram.com/ollieezhou/" style={{color: 'black'}} target="_blank" rel="noreferrer"><BsInstagram /></a>
+                        <a href="https://www.linkedin.com/in/oliverzhou1/" style={{color: 'black'}} target="_blank" rel="noreferrer"><BsLinkedin /></a>
+                        <a href="https://github.com/oliverzhouwen" style={{color: 'black'}} target="_blank" rel="noreferrer"><BsGithub /></a>
+                    </IconContext.Provider>
                 </NavigationContacts>
             </NavigationContainer>
             <Outlet />

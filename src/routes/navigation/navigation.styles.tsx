@@ -32,10 +32,11 @@ export const NavigationLinks = styled.div`
     margin: 0;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
     > * {
         font-weight: 500;
         font-size: 1.1rem;
+        flex: 1;
+        text-align: center;
     }
     @media (max-width: 850px) {
         width: 100%
