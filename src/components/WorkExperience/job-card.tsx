@@ -16,6 +16,7 @@ const JobCard = ({position, companyLogo, duration, location, description}: propT
                 <div className="company">
                     <img 
                         src={companyLogo}
+                        alt={position}
                     />
                 </div>
                 <div className="time-and-location">

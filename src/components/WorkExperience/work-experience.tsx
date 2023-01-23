@@ -39,7 +39,7 @@ const WorkExperience = () => {
                 <div className="education-container">
                     <h2>Education</h2>
                     <Divider color="white" />
-                    <img src="https://courseseeker.edu.au/assets/images/institutions/3040.png"/>
+                    <img src="https://courseseeker.edu.au/assets/images/institutions/3040.png" alt="USYD_Logo"/>
                     <p>Bachelor of Engineering,<br/>Electrical and Electronics Engineering</p>
                     <p>2014-2018</p>
                 </div>
