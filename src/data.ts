@@ -1,5 +1,14 @@
 export const employment_history = [
     {
+        position: "Quality Assurance Engineer | Inquisitive",
+        companyLogo: "https://www.inquisitive.com/au/static/media/inquisitive_logo.af8e9f4b.svg",
+        location: "Sydney, Australia",
+        duration: "Feb 2022 - present",
+        description: 
+        `<p>Enjoying my time here.<p>
+        `
+    },
+    {
         position: "Quality Automation Engineer | Nasdaq",
         companyLogo: "https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/NASDAQ_Logo.svg/1200px-NASDAQ_Logo.svg.png",
         location: "Sydney, Australia",

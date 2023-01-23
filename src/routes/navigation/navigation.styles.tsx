@@ -14,6 +14,7 @@ export const NavigationContainer = styled.div`
         }
     }
     @media (max-width: 850px) {
+        padding-top: 1.5rem;
         width: 100vw;
         flex-direction: column;
         align-items: center;
