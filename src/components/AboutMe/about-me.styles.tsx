@@ -10,10 +10,6 @@ export const AboutMeContainer = styled.div`
         height: 16rem;
         display: block;
     }
-
-    .self-introduction {
-        font-family: Roboto Slab, serif;
-    }
     
     @media(min-width: 850px) {
         .self-image-container {

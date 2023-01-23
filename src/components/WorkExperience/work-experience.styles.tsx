@@ -1,7 +1,6 @@
 import styled from "styled-components";
 
 export const WorkExperienceContainer = styled.div`
-    font-family: Roboto Slab, serif;
     border-top: 1px solid #A1B0AB;
     width: 100vw;
 

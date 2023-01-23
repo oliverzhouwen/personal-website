@@ -14,7 +14,7 @@ const Navigation = () => {
     return (
         <>
             <NavigationContainer>
-                <NavigationHeader>OLIVER WEN Z.</NavigationHeader>
+                <NavigationHeader to="/">OLIVER WEN Z.</NavigationHeader>
                 <NavigationLinks>
                     <NavigationLink to='/' >Home</NavigationLink>
                     <NavigationLink to='/about'>About</NavigationLink>

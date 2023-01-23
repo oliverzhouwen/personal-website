@@ -1,0 +1,33 @@
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(17, 21, 24, 0.45);
+}
+
+.overlay > .closeButton {
+    font-size: 3rem;
+    text-align: right;
+    margin-top: 2%;
+    margin-right: 2%;
+    color: white;
+}
+
+.content {
+    height: 70vh;
+    width: 90vw;
+    position: absolute;
+    top: 15%;
+    left: 5%;
+    bottom: 15%;
+    border-style: none;
+    border-radius: 14px;
+    background: #fff;
+    overflow: auto;
+    -webkit-overflow-scrolling: touch;
+    outline: none;
+    padding: 0;
+    background-color: white;
+}

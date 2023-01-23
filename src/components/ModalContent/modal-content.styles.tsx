@@ -44,6 +44,13 @@ export const ModalContentInfo = styled.div`
             font-weight: bold;
         }
     }
+
+    > .closeButton {
+        font-size: 2rem;
+        padding: 0;
+        margin: 0;
+        text-align: right;
+    }
 `;
 
 export const ModelContentImage = styled.img`
@@ -51,7 +58,8 @@ export const ModelContentImage = styled.img`
     @media (min-width: 851px) {
         grid-column-start: 1;
         grid-column-end: 2;
-        width: 70%;
+        width: 40vw;
+        height: 55vh;
         max-height: 70vh;
         object-fit: cover;
         justify-self: center;

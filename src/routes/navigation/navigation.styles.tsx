@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { NavLink } from 'react-router-dom';
+import { NavLink, Link } from 'react-router-dom';
 
 export const NavigationContainer = styled.div`
     position: sticky;
@@ -22,9 +22,11 @@ export const NavigationContainer = styled.div`
     margin-bottom: 2rem;
 `;
 
-export const NavigationHeader = styled.h2`
+export const NavigationHeader = styled(Link)`
     font-family: 'Caveat', cursive;
     font-size: 2rem;
+    text-decoration: none;
+    color: black;
 `;
 
 export const NavigationLinks = styled.div`

@@ -6,16 +6,17 @@ import {
     ModelContentImage 
 } from "./modal-content.styles";
 
+
 type propTypes = {
     content: {
         "url": string,
         "name": string,
         "description": string,
         "location": string
-    }
+    },
 };
 
-const ModalContent = ({content}: propTypes) => {
+const ModalContent = ({ content }: propTypes) => {
     return (
         <ModalContentContainer>
             <ModelContentImage src={content.url} />
