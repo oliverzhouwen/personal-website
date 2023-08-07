@@ -61,6 +61,11 @@ export const LeftContainer = styled.div`
             margin: 0;
             padding: 0;
         }
+
+        a {
+            color: inherit;
+            text-decoration: underline;
+        }
     };
 
     .education-container {

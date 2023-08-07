@@ -4,10 +4,10 @@ const HomeBanner = () => {
     return (
         <HomeBannerContainer>
             <h1>Hi, I'm Oliver 👋</h1>
-            <p>I am a Software Quality Engineer living in Sydney, Australia 🦘</p>
-            <p>Besides coding, I also enjoy travelling around the world.</p>
-            <p>Below are some of the photos I took that I'd like to share with you!</p>
-            <p>You can click photo to see the location.</p>
+            <p>I am a Software Quality Engineer residing in Sydney, Australia  🦘</p>
+            <p>In addition to coding, I have a passion for traveling the world.</p>
+            <p>Here are a few photos I captured, which I would like to share with you!</p>
+            <p>Feel free to click on each photo to view its location.</p>
         </HomeBannerContainer>
     );
 };
