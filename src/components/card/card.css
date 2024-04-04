@@ -1,0 +1,46 @@
+.cards {
+    width: 100%;
+    overflow-x: auto;
+    white-space: nowrap;
+    margin-top: 50px;
+}
+
+.card {
+    width: 500px;
+    height: 200px;
+    padding: 20px;
+    box-sizing: border-box;
+    border: 1px solid white;
+    border-radius: 5px;
+    position: relative;
+    display: inline-block;
+    margin-right: 20px;
+}
+
+#position {
+    position: absolute;
+    bottom: 0;
+    padding-bottom: inherit;
+    font-size: 20px;
+}
+
+#duration {
+    transform: rotate(90deg);
+    position: absolute;
+    padding-bottom: inherit;
+    bottom: 0;
+    right: 0;
+    margin-bottom: 45px;
+}
+
+svg {
+    width: 150px;
+    color: "white";
+    display: block;
+}
+
+img {
+    display: block;
+    width: 120px;
+    color: white;
+}

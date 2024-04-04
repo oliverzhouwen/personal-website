@@ -1,8 +1,15 @@
+import './App.css';
+import Header from './components/header/header';
+import Introduction from './components/introduction/introduction';
+import Card from './components/card/card';
+
 const App = () => {
     return (
-        <div>
-            Test Web App
-        </div>
+        <>
+            <Header />
+            <Introduction />
+            <Card />
+        </>
     )
 };
 
