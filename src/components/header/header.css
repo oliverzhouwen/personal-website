@@ -1,0 +1,28 @@
+header {
+    display: flex;
+    align-items: flex-end;
+    margin-bottom: 70px;
+}
+
+h1 {
+    margin: 0;
+    margin-right: auto;
+}
+
+ul {
+    display: flex;
+    gap: 30px;
+    font-weight: bold;
+    font-size: 20px;
+    margin: 0;
+}
+
+li {
+    list-style: none;
+    align-self: flex-end;
+}
+
+li:hover {
+    box-sizing: border-box;
+    border-bottom: 5px solid white;
+}
